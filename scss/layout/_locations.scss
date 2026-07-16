@@ -1,0 +1,91 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+$locations-title-color: #3e4566;
+
+.locations-section {
+  position: relative;
+  padding-top: $spacing-4xl;
+  padding-bottom: calc($spacing-4xl + $brush-height);
+  background-color: #f2e9e1;
+  background-image: url('../assets/images/location-bg-pattern.jpg');
+  background-repeat: repeat;
+  background-size: auto;
+  color: $heading-color;
+
+  &__title {
+    margin: 0 0 $spacing-3xl;
+    font-size: clamp($font-size-2xl, 4vw, $font-size-3xl);
+    font-weight: $font-weight-bold;
+    color: $locations-title-color;
+  }
+
+  &__bottom-brush {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: $brush-height;
+    background-image: url('../assets/images/locations-bottom-shape.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: bottom center;
+    pointer-events: none;
+  }
+}
+
+.location-card {
+  &__name {
+    margin: 0 0 $spacing-sm;
+    font-size: $font-size-lg;
+    font-weight: $font-weight-bold;
+    letter-spacing: $letter-spacing-wide;
+    text-transform: uppercase;
+    color: $heading-color;
+  }
+
+  &__address {
+    margin: 0 0 $spacing-lg;
+    font-style: normal;
+    font-size: $font-size-base;
+    line-height: $line-height-relaxed;
+    color: $heading-color;
+  }
+
+  &__note {
+    margin: (-$spacing-md) 0 $spacing-lg;
+    font-size: $font-size-base;
+    color: $heading-color;
+  }
+
+  &__block {
+    margin-bottom: $spacing-lg;
+  }
+
+  &__heading {
+    margin: 0 0 $spacing-xs;
+    font-size: $font-size-base;
+    font-weight: $font-weight-bold;
+    color: $heading-color;
+  }
+
+  &__text,
+  &__hours {
+    margin: 0;
+    font-size: $font-size-base;
+    font-weight: $font-weight-regular;
+    line-height: $line-height-relaxed;
+    color: $heading-color;
+  }
+
+  &__hours li + li {
+    margin-top: 0.15rem;
+  }
+
+  &__footnote {
+    margin: $spacing-xl 0 0;
+    font-size: $font-size-sm;
+    line-height: $line-height-relaxed;
+    color: $heading-color;
+  }
+}

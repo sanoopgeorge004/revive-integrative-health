@@ -1,0 +1,46 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "revive/highlight-box",
+	"title": "Highlight Box",
+	"category": "revive",
+	"icon": "id",
+	"description": "New patient highlight box with image, text, and CTA.",
+	"textdomain": "revive-integrative-health",
+	"attributes": {
+		"title": {
+			"type": "string",
+			"default": "New Patient? Start Here."
+		},
+		"text": {
+			"type": "string",
+			"default": "We provide a wide range of services at Revive to help you achieve your health and wellness goals, individually and as a family."
+		},
+		"ctaLabel": {
+			"type": "string",
+			"default": "New Patient Intake Form"
+		},
+		"ctaUrl": {
+			"type": "string",
+			"default": "#new-patient-intake"
+		},
+		"imageUrl": {
+			"type": "string",
+			"default": ""
+		},
+		"imageId": {
+			"type": "number",
+			"default": 0
+		},
+		"imageAlt": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"supports": {
+		"html": false,
+		"align": ["full"]
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}

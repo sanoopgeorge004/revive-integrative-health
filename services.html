@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore pediatric, specialized, and health & wellness services at Revive Integrative Health.">
+  <title>Services — Revive Integrative Health</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-inner">
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header" role="banner">
+    <nav class="navbar navbar-expand-lg site-header__navbar" aria-label="Primary">
+      <div class="site-header__inner d-flex align-items-center gap-4">
+
+        <div class="site-header__brand">
+          <a href="index.html" class="site-header__logo-link" aria-label="Revive Integrative Health — Home">
+            <img
+              src="assets/images/logo.png"
+              alt="Revive Integrative Health"
+              class="site-header__logo-image img-fluid"
+            >
+          </a>
+        </div>
+
+        <div class="site-header__menu-col d-flex flex-column flex-grow-1">
+          <div class="site-header__phone-row text-end mb-4">
+            <a href="tel:7854149422" class="site-header__phone d-inline-flex align-items-center gap-2">
+              <svg class="site-header__phone-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.56.57 1 1 0 011 1V21a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.56 1 1 0 01-.25 1.01l-2.2 2.22z"/>
+              </svg>
+              <span>785-414-9422</span>
+            </a>
+          </div>
+
+          <div class="site-header__menu-row d-flex align-items-center justify-content-between gap-3">
+            <button
+              class="navbar-toggler site-header__toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#site-navigation"
+              aria-controls="site-navigation"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end offcanvas-lg site-header__offcanvas flex-grow-1" tabindex="-1" id="site-navigation" aria-labelledby="site-navigation-label">
+              <div class="offcanvas-header d-lg-none">
+                <h2 class="offcanvas-title fs-6 text-uppercase" id="site-navigation-label">Menu</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+
+              <div class="offcanvas-body justify-content-end">
+                <ul class="navbar-nav site-header__nav flex-lg-row align-items-lg-center gap-3 gap-lg-4">
+                  <li class="nav-item site-header__mega-item">
+                    <a
+                      href="services.html"
+                      class="nav-link site-header__nav-link p-0 is-active"
+                      id="services-mega-trigger"
+                      aria-expanded="false"
+                      aria-controls="services-mega-menu"
+                      data-mega-trigger
+                      aria-current="page"
+                    >
+                      Services
+                    </a>
+
+                    <div class="mega-menu" id="services-mega-menu" role="region" aria-label="Services menu" data-mega-panel>
+                      <div class="mega-menu__inner container">
+                        <div class="row g-4 g-lg-5">
+                          <div class="col-12 col-lg-4">
+                            <h3 class="mega-menu__heading">Pediatric Services</h3>
+                            <ul class="mega-menu__list list-unstyled mb-0">
+                              <li><a href="#pediatric-services" class="mega-menu__link" data-bs-dismiss="offcanvas">Physical therapy</a></li>
+                              <li><a href="#pediatric-services" class="mega-menu__link" data-bs-dismiss="offcanvas">Occupational therapy</a></li>
+                              <li><a href="#pediatric-services" class="mega-menu__link" data-bs-dismiss="offcanvas">Speech therapy</a></li>
+                              <li><a href="#pediatric-services" class="mega-menu__link" data-bs-dismiss="offcanvas">Aquatic therapy</a></li>
+                              <li><a href="#pediatric-services" class="mega-menu__link" data-bs-dismiss="offcanvas">ABA therapy</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-12 col-lg-4">
+                            <h3 class="mega-menu__heading">Specialized Services</h3>
+                            <ul class="mega-menu__list list-unstyled mb-0">
+                              <li><a href="#specialized-services" class="mega-menu__link" data-bs-dismiss="offcanvas">Pelvic Floor (Men&rsquo;s/Women&rsquo;s health)</a></li>
+                              <li><a href="#specialized-services" class="mega-menu__link" data-bs-dismiss="offcanvas">Mercier</a></li>
+                              <li><a href="#specialized-services" class="mega-menu__link" data-bs-dismiss="offcanvas">Lymphedema</a></li>
+                              <li><a href="#specialized-services" class="mega-menu__link" data-bs-dismiss="offcanvas">Speech therapy</a></li>
+                              <li><a href="#specialized-services" class="mega-menu__link" data-bs-dismiss="offcanvas">Mental Health</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-12 col-lg-4">
+                            <h3 class="mega-menu__heading">Health &amp; Wellness Services</h3>
+                            <ul class="mega-menu__list list-unstyled mb-0">
+                              <li><a href="#health-wellness-services" class="mega-menu__link" data-bs-dismiss="offcanvas">Acupuncture</a></li>
+                              <li><a href="#health-wellness-services" class="mega-menu__link" data-bs-dismiss="offcanvas">Massage</a></li>
+                              <li><a href="#health-wellness-services" class="mega-menu__link" data-bs-dismiss="offcanvas">Spa facials</a></li>
+                              <li><a href="#health-wellness-services" class="mega-menu__link" data-bs-dismiss="offcanvas">IV and injection therapy</a></li>
+                              <li><a href="#health-wellness-services" class="mega-menu__link" data-bs-dismiss="offcanvas">Ozone and UBI therapy</a></li>
+                              <li><a href="#health-wellness-services" class="mega-menu__link" data-bs-dismiss="offcanvas">Shockwave</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item"><a href="team.html" class="nav-link site-header__nav-link p-0" data-bs-dismiss="offcanvas">Our Team</a></li>
+                  <li class="nav-item"><a href="team.html#careers" class="nav-link site-header__nav-link p-0" data-bs-dismiss="offcanvas">Careers</a></li>
+                  <li class="nav-item"><a href="index.html#insurance" class="nav-link site-header__nav-link p-0" data-bs-dismiss="offcanvas">Insurance</a></li>
+                  <li class="nav-item"><a href="contact.html" class="nav-link site-header__nav-link p-0" data-bs-dismiss="offcanvas">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <a href="#book-online" class="btn-revive btn-revive--primary btn-revive--sm flex-shrink-0">Book Online</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <span class="site-header__bottom-brush" aria-hidden="true"></span>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ===================== PAGE BANNER ===================== -->
+    <section class="page-banner" aria-labelledby="page-banner-title">
+      <figure class="page-banner__background">
+        <img
+          src="assets/images/peadiatric-service.jpg"
+          alt=""
+          class="page-banner__image"
+          width="1200"
+          height="800"
+        >
+        <span class="page-banner__overlay" aria-hidden="true"></span>
+      </figure>
+      <div class="page-banner__content">
+        <h1 class="page-banner__title" id="page-banner-title">Services</h1>
+      </div>
+      <span class="page-banner__bar" aria-hidden="true"></span>
+    </section>
+
+    <!-- ===================== PEDIATRIC (featured with accordion) ===================== -->
+    <section class="service-detail section-pad" id="pediatric-services" aria-labelledby="pediatric-detail-title">
+      <div class="container">
+        <div class="service-detail__intro row align-items-center g-4 g-lg-5">
+          <div class="col-12 col-lg-5">
+            <figure class="service-card__media service-card__media--accent-blue mx-auto mb-0">
+              <img
+                src="assets/images/image-masking-shape-1.png"
+                alt=""
+                class="service-card__media-glow"
+                width="441"
+                height="457"
+                aria-hidden="true"
+              >
+              <img
+                src="assets/images/peadiatric-service-masked.png"
+                alt="A young child holding a yellow ball above their head"
+                class="service-card__image"
+                width="441"
+                height="457"
+              >
+            </figure>
+          </div>
+          <div class="col-12 col-lg-7">
+            <h2 class="service-card__heading" id="pediatric-detail-title">Pediatric Services</h2>
+            <p class="service-card__text mb-0">
+              Our pediatric team supports children of all ages with individualized therapy plans that build strength, confidence, and independence—at home, school, and play.
+            </p>
+          </div>
+        </div>
+
+        <div class="service-detail__accordion row">
+          <div class="col-12">
+    
+            <div class="accordion service-accordion" id="pediatric-accordion">
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="heading-pt">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-pt" aria-expanded="true" aria-controls="collapse-pt">
+                    Physical Therapy
+                  </button>
+                </h3>
+                <div id="collapse-pt" class="accordion-collapse collapse show" aria-labelledby="heading-pt" data-bs-parent="#pediatric-accordion">
+                  <div class="accordion-body">
+                    <p>Pediatric physical therapy helps children improve strength, balance, coordination, and mobility through play-based, age-appropriate exercises.</p>
+                    <p>Our therapists create personalized plans that support developmental milestones and help kids move with confidence in everyday activities.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="heading-ot">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-ot" aria-expanded="false" aria-controls="collapse-ot">
+                    Occupational Therapy
+                  </button>
+                </h3>
+                <div id="collapse-ot" class="accordion-collapse collapse" aria-labelledby="heading-ot" data-bs-parent="#pediatric-accordion">
+                  <div class="accordion-body">
+                    <p>Occupational therapy supports fine motor skills, sensory processing, and daily living activities so children can thrive at home and in school.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="heading-st">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-st" aria-expanded="false" aria-controls="collapse-st">
+                    Speech Therapy
+                  </button>
+                </h3>
+                <div id="collapse-st" class="accordion-collapse collapse" aria-labelledby="heading-st" data-bs-parent="#pediatric-accordion">
+                  <div class="accordion-body">
+                    <p>Speech therapy helps children develop communication, language, and feeding skills with engaging, family-centered care.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="heading-aq">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-aq" aria-expanded="false" aria-controls="collapse-aq">
+                    Aquatic Therapy
+                  </button>
+                </h3>
+                <div id="collapse-aq" class="accordion-collapse collapse" aria-labelledby="heading-aq" data-bs-parent="#pediatric-accordion">
+                  <div class="accordion-body">
+                    <p>Aquatic therapy uses warm water to support movement, reduce joint stress, and build strength in a fun, low-impact environment.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="heading-aba">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-aba" aria-expanded="false" aria-controls="collapse-aba">
+                    ABA Therapy
+                  </button>
+                </h3>
+                <div id="collapse-aba" class="accordion-collapse collapse" aria-labelledby="heading-aba" data-bs-parent="#pediatric-accordion">
+                  <div class="accordion-body">
+                    <p>ABA therapy focuses on building communication, social, and adaptive skills through evidence-based, individualized behavioral support.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== OTHER SERVICES ===================== -->
+    <section class="other-services section-pad" aria-labelledby="other-services-title">
+      <div class="container">
+        <h2 class="other-services__title text-center" id="other-services-title">Other Services</h2>
+
+        <div class="services-section__list">
+          <!-- Specialized -->
+          <article class="service-card row align-items-center g-4 g-lg-5 flex-lg-row-reverse" id="specialized-services">
+            <div class="col-12 col-lg-5">
+              <figure class="service-card__media service-card__media--accent-purple mx-auto mb-0">
+                <img src="assets/images/image-masking-shape-purple.png" alt="" class="service-card__media-glow" width="441" height="457" aria-hidden="true">
+                <img src="assets/images/specialized-masked.png" alt="A person in a hoodie sitting thoughtfully with hands clasped" class="service-card__image" width="441" height="457">
+              </figure>
+            </div>
+            <div class="col-12 col-lg-7">
+              <div class="service-card__content">
+                <h3 class="service-card__heading">Specialized</h3>
+                <p class="service-card__text">
+                  From pelvic health to mental wellness, our specialized programs address complex needs with compassionate, evidence-based care tailored to each patient.
+                </p>
+                <ul class="service-card__list row row-cols-1 row-cols-sm-2 g-2 list-unstyled mb-4">
+                  <li class="col"><span class="service-card__list-item">Pelvic Floor (Men&rsquo;s &amp; Women&rsquo;s Health)</span></li>
+                  <li class="col"><span class="service-card__list-item">Mercier</span></li>
+                  <li class="col"><span class="service-card__list-item">Lymphedema</span></li>
+                  <li class="col"><span class="service-card__list-item">Speech Therapy</span></li>
+                  <li class="col"><span class="service-card__list-item">Mental Health</span></li>
+                </ul>
+                <a href="#contact" class="btn-revive btn-revive--primary btn-revive--sm">More Info</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Health & Wellness -->
+          <article class="service-card row align-items-center g-4 g-lg-5" id="health-wellness-services">
+            <div class="col-12 col-lg-5">
+              <figure class="service-card__media service-card__media--accent-purple mx-auto mb-0">
+                <img src="assets/images/image-masking-shape-purple.png" alt="" class="service-card__media-glow" width="441" height="457" aria-hidden="true">
+                <img src="assets/images/health-wellness-masked.png" alt="Hands performing a therapeutic massage on a person's back" class="service-card__image" width="441" height="457">
+              </figure>
+            </div>
+            <div class="col-12 col-lg-7">
+              <div class="service-card__content">
+                <h3 class="service-card__heading">Health &amp; Wellness</h3>
+                <p class="service-card__text">
+                  Restore balance and feel your best with integrative wellness therapies designed to support recovery, reduce pain, and promote lasting vitality.
+                </p>
+                <ul class="service-card__list row row-cols-1 row-cols-sm-2 g-2 list-unstyled mb-4">
+                  <li class="col"><span class="service-card__list-item">IV and Injection Therapy</span></li>
+                  <li class="col"><span class="service-card__list-item">Ozone and UBI Therapy</span></li>
+                  <li class="col"><span class="service-card__list-item">Shockwave</span></li>
+                  <li class="col"><span class="service-card__list-item">Acupuncture</span></li>
+                  <li class="col"><span class="service-card__list-item">Massage</span></li>
+                  <li class="col"><span class="service-card__list-item">Spa Facials</span></li>
+                </ul>
+                <a href="#contact" class="btn-revive btn-revive--primary btn-revive--sm">More Info</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="contact-section contact-section--no-brush" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 class="contact-section__title text-center" id="contact-title">Contact Our Team</h2>
+        <div class="cognito-form-embed" id="cognito-contact-form">
+          <form class="cog-form c-forms-form" action="#" method="post" novalidate>
+            <div class="cog-row c-row row g-3">
+              <div class="cog-row__col c-col col-12 col-md-6">
+                <div class="cog-field cog-text cog-name c-field c-name">
+                  <label class="cog-label c-label" for="contact-name">Name</label>
+                  <input class="el-input__inner c-input" id="contact-name" name="name" type="text" autocomplete="name">
+                </div>
+              </div>
+              <div class="cog-row__col c-col col-12 col-md-6">
+                <div class="cog-field cog-email c-field c-email">
+                  <label class="cog-label c-label" for="contact-email">Email</label>
+                  <input class="el-input__inner c-input" id="contact-email" name="email" type="email" autocomplete="email">
+                </div>
+              </div>
+              <div class="cog-row__col c-col col-12">
+                <div class="cog-field cog-text cog-text--multiplelines c-field c-textarea">
+                  <label class="cog-label c-label" for="contact-message">Message</label>
+                  <textarea class="el-textarea__inner c-textarea-input" id="contact-message" name="message" rows="5"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="cog-form__footer c-forms-form-buttons d-flex flex-column flex-sm-row align-items-sm-center justify-content-between gap-3 mt-4">
+              <div class="cognito-form-embed__captcha" aria-hidden="true">
+                <div class="cognito-form-embed__captcha-placeholder">reCAPTCHA</div>
+              </div>
+              <button type="submit" class="cog-button cog-button--primary cog-button--submit c-button" id="c-submit-button">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="row gy-4 align-items-start justify-content-between">
+        <div class="col-12 col-lg-3">
+          <a href="index.html" class="site-footer__logo-link" aria-label="Revive Integrative Health — Home">
+            <img src="assets/images/logo.png" alt="Revive Integrative Health" class="site-footer__logo img-fluid" width="342" height="150">
+          </a>
+        </div>
+        <div class="col-12 col-md-8 col-lg-6">
+          <div class="site-footer__contact">
+            <h2 class="site-footer__heading">Contact Us</h2>
+            <div class="row g-3 g-md-4 mb-3">
+              <div class="col-12 col-sm-6">
+                <address class="site-footer__address mb-0">
+                  <strong class="site-footer__address-title">Salina Location</strong><br>
+                  645 E. Iron St<br>
+                  Salina, KS 67401
+                </address>
+              </div>
+              <div class="col-12 col-sm-6">
+                <address class="site-footer__address mb-0">
+                  <strong class="site-footer__address-title">McPherson Location</strong><br>
+                  114 W. Euclid<br>
+                  McPherson, KS 67460<br>
+                  Located in Stupka Chiropractic
+                </address>
+              </div>
+            </div>
+            <ul class="site-footer__links list-unstyled mb-0">
+              <li>
+                <a href="tel:7854149422" class="site-footer__link">
+                  <svg class="site-footer__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.56.57 1 1 0 011 1V21a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.56 1 1 0 01-.25 1.01l-2.2 2.22z"/>
+                  </svg>
+                  <span>785-414-9422</span>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:revive@reviveih.com" class="site-footer__link">
+                  <svg class="site-footer__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                  </svg>
+                  <span>revive@reviveih.com</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3">
+          <div class="site-footer__meta text-md-end">
+            <a href="https://www.facebook.com/" class="site-footer__social" target="_blank" rel="noopener noreferrer" aria-label="Revive Integrative Health on Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M22 12a10 10 0 10-11.5 9.9v-7H8v-3h2.5V9.5c0-2.5 1.5-3.9 3.7-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.5V12H16l-.4 3h-2.6v7A10 10 0 0022 12z"/>
+              </svg>
+            </a>
+            <p class="site-footer__credit mb-0">
+              <span>&copy;2026 Revive Integrative Health</span>
+              <span>Designed by Mr. Freeland Design</span>
+              <span>Powered by WCCiT</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="js/megamenu.js"></script>
+</body>
+</html>

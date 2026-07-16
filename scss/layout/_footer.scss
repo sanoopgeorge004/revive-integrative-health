@@ -1,0 +1,112 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.site-footer {
+  background-color: #333333;
+  color: $white;
+  padding-top: $spacing-3xl;
+  padding-bottom: $spacing-3xl;
+
+  &__logo-link {
+    display: inline-block;
+
+    &:focus-visible {
+      outline: 2px solid $primary-color;
+      outline-offset: 4px;
+      border-radius: $border-radius-sm;
+    }
+  }
+
+  &__logo {
+    display: block;
+    width: auto;
+    max-width: 14rem;
+    height: auto;
+  }
+
+  &__heading {
+    margin: 0 0 $spacing-lg;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-semibold;
+    letter-spacing: $letter-spacing-wider;
+    text-transform: uppercase;
+    color: $white;
+  }
+
+  &__address {
+    font-style: normal;
+    font-size: $font-size-sm;
+    line-height: $line-height-relaxed;
+    color: $white;
+  }
+
+  &__address-title {
+    font-weight: $font-weight-semibold;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-sm;
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    gap: $spacing-sm;
+    font-size: $font-size-sm;
+    color: $white;
+    text-decoration: none;
+    transition: color $transition-base;
+
+    &:hover,
+    &:focus-visible {
+      color: $primary-color;
+    }
+  }
+
+  &__icon {
+    width: 1rem;
+    height: 1rem;
+    flex-shrink: 0;
+    color: $primary-color;
+  }
+
+  &__social {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    margin-bottom: $spacing-lg;
+    color: $white;
+    border: 1.5px solid $white;
+    border-radius: $border-radius-sm;
+    transition: color $transition-base, border-color $transition-base, background-color $transition-base;
+
+    svg {
+      width: 1.1rem;
+      height: 1.1rem;
+    }
+
+    &:hover,
+    &:focus-visible {
+      color: $primary-color;
+      border-color: $primary-color;
+    }
+
+    &:focus-visible {
+      outline: 2px solid $primary-color;
+      outline-offset: 3px;
+    }
+  }
+
+  &__credit {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    font-size: $font-size-xs;
+    line-height: $line-height-base;
+    color: rgba($white, 0.75);
+  }
+}

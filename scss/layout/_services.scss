@@ -1,0 +1,94 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+// Service photos are pre-composited with the brush masks into transparent PNGs
+// (e.g. peadiatric-service-masked.png). No CSS mask-image required — that keeps
+// rendering consistent across browsers and local file:// previews.
+
+.services-section {
+  padding-top: $spacing-4xl;
+  padding-bottom: $spacing-4xl;
+  background-color: $white;
+
+  &__title {
+    margin-bottom: $spacing-3xl;
+    font-size: clamp($font-size-2xl, 4vw, $font-size-3xl);
+    font-weight: $font-weight-bold;
+    color: $heading-color;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-4xl;
+  }
+}
+
+.service-card {
+  &__media {
+    position: relative;
+    width: 100%;
+    max-width: 22rem;
+  }
+
+  // Decorative brush shape behind the photo (the mask PNG itself)
+  &__media-glow {
+    position: absolute;
+    left: -6%;
+    top: -4%;
+    width: 108%;
+    height: auto;
+    z-index: 0;
+    opacity: 0.55;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  &__image {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  &__heading {
+    margin-bottom: $spacing-md;
+    font-size: clamp($font-size-xl, 3vw, $font-size-2xl);
+    font-weight: $font-weight-medium;
+    color: $text-color;
+  }
+
+  &__text {
+    margin-bottom: $spacing-lg;
+    font-size: $font-size-base;
+    line-height: $line-height-relaxed;
+    color: $text-color;
+    max-width: 36rem;
+  }
+
+  &__list-item {
+    display: flex;
+    align-items: flex-start;
+    gap: $spacing-sm;
+    font-size: $font-size-sm;
+    line-height: $line-height-base;
+    color: $text-color;
+
+    &::before {
+      content: '';
+      flex-shrink: 0;
+      width: 0.375rem;
+      height: 0.375rem;
+      margin-top: 0.45em;
+      border-radius: 50%;
+      background-color: $primary-color;
+    }
+  }
+
+  @include media-up(lg) {
+    &__media {
+      max-width: 26rem;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+@use 'sass:math';
+
+@function rem($pixels, $base: 16) {
+  @return math.div($pixels, $base) * 1rem;
+}
+
+@function alpha($color, $opacity) {
+  @return rgba($color, $opacity);
+}

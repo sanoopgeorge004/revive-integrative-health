@@ -1,0 +1,123 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.testimonials-section {
+  padding-top: $spacing-3xl;
+  padding-bottom: $spacing-4xl;
+  background-color: $white;
+
+  &__header {
+    margin-bottom: $spacing-2xl;
+  }
+
+  &__brush {
+    display: block;
+    width: min(14rem, 55vw);
+    height: auto;
+    margin: 0 auto $spacing-md;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: clamp($font-size-2xl, 4vw, $font-size-3xl);
+    font-weight: $font-weight-bold;
+    color: $heading-color;
+  }
+
+  &__carousel-wrap {
+    max-width: 52rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
+
+    @include media-up(md) {
+      padding-left: 3.5rem;
+      padding-right: 3.5rem;
+    }
+  }
+
+  &__arrow {
+    @include button-reset;
+
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    color: #b0b0b0;
+    transform: translateY(-50%);
+    transition: color $transition-base;
+
+    &:hover,
+    &:focus-visible {
+      color: $primary-color;
+    }
+
+    &:focus-visible {
+      outline: 2px solid $primary-color;
+      outline-offset: 2px;
+      border-radius: $border-radius-sm;
+    }
+
+    svg {
+      width: 1.75rem;
+      height: 1.75rem;
+    }
+
+    &--prev {
+      left: 0;
+    }
+
+    &--next {
+      right: 0;
+    }
+  }
+}
+
+.testimonial-slide {
+  margin: 0;
+  padding: 0 $spacing-sm;
+
+  &__quote {
+    margin: 0 0 $spacing-lg;
+    font-size: clamp($font-size-sm, 2vw, $font-size-base);
+    font-weight: $font-weight-regular;
+    line-height: $line-height-relaxed;
+    color: $heading-color;
+  }
+
+  &__author {
+    margin: 0;
+  }
+
+  &__name {
+    font-style: italic;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-regular;
+    color: $heading-color;
+  }
+}
+
+// Slick resets for this section only
+.testimonials-slider {
+  .slick-list {
+    margin: 0;
+  }
+
+  .slick-track {
+    display: flex;
+    align-items: center;
+  }
+
+  .slick-slide {
+    height: auto;
+
+    > div {
+      height: 100%;
+    }
+  }
+}

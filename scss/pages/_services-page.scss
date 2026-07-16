@@ -1,0 +1,173 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.section-pad {
+  padding-top: $spacing-4xl;
+  padding-bottom: $spacing-4xl;
+}
+
+.page-banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 16rem;
+  overflow: hidden;
+
+  @include media-up(md) {
+    min-height: 22rem;
+  }
+
+  &__background {
+    position: absolute;
+    inset: 0;
+    margin: 0;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba($black, 0.35);
+  }
+
+  &__content {
+    position: relative;
+    z-index: 1;
+    @include container;
+
+    text-align: center;
+    padding-top: $spacing-3xl;
+    padding-bottom: $spacing-3xl;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: clamp($font-size-3xl, 6vw, $font-size-4xl);
+    font-weight: $font-weight-regular;
+    letter-spacing: $letter-spacing-wide;
+    text-transform: uppercase;
+    color: $white;
+  }
+
+  &__bar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1.75rem;
+    background-color: $primary-color;
+    z-index: 2;
+  }
+}
+
+.other-services {
+  &__title {
+    margin: 0 0 $spacing-3xl;
+    font-size: clamp($font-size-2xl, 4vw, $font-size-3xl);
+    font-weight: $font-weight-bold;
+    color: $heading-color;
+  }
+}
+
+.service-detail {
+  &__intro {
+    margin-bottom: $spacing-3xl;
+  }
+
+  &__accordion {
+    margin-top: 0;
+  }
+}
+
+.service-accordion {
+  --bs-accordion-border-width: 0;
+  --bs-accordion-border-radius: 0;
+  --bs-accordion-inner-border-radius: 0;
+  --bs-accordion-btn-padding-x: 1.25rem;
+  --bs-accordion-btn-padding-y: 1rem;
+  --bs-accordion-body-padding-x: 1.25rem;
+  --bs-accordion-body-padding-y: 1.25rem;
+  --bs-accordion-bg: transparent;
+  --bs-accordion-btn-bg: #e5e5e5;
+  --bs-accordion-active-bg: #e5e5e5;
+  --bs-accordion-btn-color: #555555;
+  --bs-accordion-active-color: #555555;
+  --bs-accordion-btn-focus-box-shadow: none;
+
+  .accordion-item {
+    margin-bottom: 0.65rem;
+    background-color: transparent;
+    border: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .accordion-button {
+    display: flex;
+    align-items: center;
+    gap: $spacing-sm;
+    font-family: $font-primary;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-semibold;
+    letter-spacing: $letter-spacing-wide;
+    text-transform: uppercase;
+    box-shadow: none;
+
+    &::after {
+      width: 1rem;
+      height: 1rem;
+      margin-left: 0;
+      order: -1;
+      flex-shrink: 0;
+      background-color: transparent;
+      // Plus icon (left of label)
+      content: '';
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23555555' d='M7 2h2v12H7z'/%3E%3Cpath fill='%23555555' d='M2 7h12v2H2z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 0.85rem;
+      transform: none;
+      transition: none;
+    }
+
+    &:not(.collapsed)::after {
+      // Minus icon
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23555555' d='M2 7h12v2H2z'/%3E%3C/svg%3E");
+      transform: none;
+    }
+
+    &:focus {
+      box-shadow: none;
+      border-color: transparent;
+    }
+
+    &:focus-visible {
+      outline: 2px solid $primary-color;
+      outline-offset: 2px;
+    }
+  }
+
+  .accordion-body {
+    background-color: $white;
+    font-size: $font-size-sm;
+    line-height: $line-height-relaxed;
+    color: $text-color;
+
+    p {
+      margin: 0 0 $spacing-md;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,105 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.team-roster {
+  background-color: $white;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-4xl;
+  }
+}
+
+.team-member {
+  &__media {
+    position: relative;
+    width: 100%;
+    max-width: 16rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include media-up(lg) {
+      max-width: 18rem;
+      margin-left: 0;
+    }
+  }
+
+  &__media-glow {
+    position: absolute;
+    left: -8%;
+    top: -6%;
+    width: 116%;
+    height: auto;
+    z-index: 0;
+    opacity: 0.6;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  &__photo {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 50%;
+  }
+
+  &__content {
+    max-width: 40rem;
+  }
+
+  &__name {
+    margin: 0 0 $spacing-xs;
+    font-size: clamp($font-size-xl, 3vw, $font-size-2xl);
+    font-weight: $font-weight-light;
+    color: $text-color;
+  }
+
+  &__role {
+    margin: 0 0 $spacing-md;
+    font-size: $font-size-md;
+    font-weight: $font-weight-regular;
+    font-style: italic;
+    color: $primary-color;
+  }
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-xs;
+    margin: 0 0 $spacing-lg;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.35rem 0.85rem;
+    font-size: $font-size-xs;
+    font-weight: $font-weight-semibold;
+    letter-spacing: $letter-spacing-wide;
+    text-transform: uppercase;
+    color: $white;
+    background-color: #555555;
+    border-radius: $border-radius-sm;
+  }
+
+  &__bio {
+    font-size: $font-size-base;
+    line-height: $line-height-relaxed;
+    color: $text-color;
+
+    p {
+      margin: 0 0 $spacing-md;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "revive/hero",
+  "title": "Hero",
+  "category": "revive",
+  "icon": "cover-image",
+  "description": "Homepage hero banner with title, CTA, and background image.",
+  "textdomain": "revive-integrative-health",
+  "attributes": {
+    "titleBefore": {
+      "type": "string",
+      "default": "Begin"
+    },
+    "titleEmphasis": {
+      "type": "string",
+      "default": "Your"
+    },
+    "titleAfter": {
+      "type": "string",
+      "default": "Wellness Journey"
+    },
+    "ctaLabel": {
+      "type": "string",
+      "default": "Book Online"
+    },
+    "ctaUrl": {
+      "type": "string",
+      "default": "#book-online"
+    },
+    "imageUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "imageId": {
+      "type": "number",
+      "default": 0
+    },
+    "imageAlt": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": [
+      "full"
+    ]
+  },
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php"
+}

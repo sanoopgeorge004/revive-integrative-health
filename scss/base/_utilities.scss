@@ -1,0 +1,14 @@
+@use '../abstracts/mixins' as *;
+
+.site-container {
+  @include container;
+}
+
+.sr-only {
+  @include visually-hidden;
+}
+
+// Inner pages: narrower content column (header/footer/banner stay full-width)
+.page-inner main .container {
+  max-width: 1000px;
+}

@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Revive Integrative Health — Begin your wellness journey with comprehensive health and wellness services.">
+  <title>Revive Integrative Health</title>
+
+  <!-- Google Fonts: Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Slick Carousel -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+
+  <!-- Theme Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header" role="banner">
+    <nav class="navbar navbar-expand-lg site-header__navbar" aria-label="Primary">
+      <div class="site-header__inner d-flex align-items-center gap-4">
+
+        <!-- Column 1: Logo -->
+        <div class="site-header__brand">
+          <a href="/" class="site-header__logo-link" aria-label="Revive Integrative Health — Home">
+            <img
+              src="assets/images/logo.png"
+              alt="Revive Integrative Health"
+              class="site-header__logo-image img-fluid"
+            >
+          </a>
+        </div>
+
+        <!-- Column 2: Row 1 = phone, Row 2 = navigation + CTA -->
+        <div class="site-header__menu-col d-flex flex-column flex-grow-1">
+
+          <div class="site-header__phone-row text-end mb-4">
+            <a href="tel:7854149422" class="site-header__phone d-inline-flex align-items-center gap-2">
+              <svg class="site-header__phone-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.56.57 1 1 0 011 1V21a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.56 1 1 0 01-.25 1.01l-2.2 2.22z"/>
+              </svg>
+              <span>785-414-9422</span>
+            </a>
+          </div>
+
+          <div class="site-header__menu-row d-flex align-items-center justify-content-between gap-3">
+
+            <!-- Mobile Toggle -->
+            <button
+              class="navbar-toggler site-header__toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#site-navigation"
+              aria-controls="site-navigation"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation -->
+            <div class="offcanvas offcanvas-end offcanvas-lg site-header__offcanvas flex-grow-1" tabindex="-1" id="site-navigation" aria-labelledby="site-navigation-label">
+              <div class="offcanvas-header d-lg-none">
+                <h2 class="offcanvas-title fs-6 text-uppercase" id="site-navigation-label">Menu</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+
+              <div class="offcanvas-body justify-content-end">
+                <ul class="navbar-nav site-header__nav flex-lg-row align-items-lg-center gap-3 gap-lg-4">
+                  <li class="nav-item site-header__mega-item">
+                    <a
+                      href="services.html"
+                      class="nav-link site-header__nav-link p-0"
+                      id="services-mega-trigger"
+                      aria-expanded="false"
+                      aria-controls="services-mega-menu"
+                      data-mega-trigger
+                    >
+                      Services
+                    </a>
+
+                    <div
+                      class="mega-menu"
+                      id="services-mega-menu"
+                      role="region"
+                      aria-label="Services menu"
+                      data-mega-panel
+                    >
+                      <div class="mega-menu__inner container">
+                        <div class="row g-4 g-lg-5">
+                          <div class="col-12 col-lg-4">
+                            <h3 class="mega-menu__heading">Pediatric Services</h3>
+                            <ul class="mega-menu__list list-unstyled mb-0">
+                              <li><a href="services.html#pediatric-services" class="mega-menu__link" data-bs-dismiss="offcanvas">Physical therapy</a></li>
+                              <li><a href="services.html#pediatric-services" class="mega-menu__link" data-bs-dismiss="offcanvas">Occupational therapy</a></li>
+                              <li><a href="services.html#pediatric-services" class="mega-menu__link" data-bs-dismiss="offcanvas">Speech therapy</a></li>
+                              <li><a href="services.html#pediatric-services" class="mega-menu__link" data-bs-dismiss="offcanvas">Aquatic therapy</a></li>
+                              <li><a href="services.html#pediatric-services" class="mega-menu__link" data-bs-dismiss="offcanvas">ABA therapy</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-12 col-lg-4">
+                            <h3 class="mega-menu__heading">Specialized Services</h3>
+                            <ul class="mega-menu__list list-unstyled mb-0">
+                              <li><a href="services.html#specialized-services" class="mega-menu__link" data-bs-dismiss="offcanvas">Pelvic Floor (Men&rsquo;s/Women&rsquo;s health)</a></li>
+                              <li><a href="services.html#specialized-services" class="mega-menu__link" data-bs-dismiss="offcanvas">Mercier</a></li>
+                              <li><a href="services.html#specialized-services" class="mega-menu__link" data-bs-dismiss="offcanvas">Lymphedema</a></li>
+                              <li><a href="services.html#specialized-services" class="mega-menu__link" data-bs-dismiss="offcanvas">Speech therapy</a></li>
+                              <li><a href="services.html#specialized-services" class="mega-menu__link" data-bs-dismiss="offcanvas">Mental Health</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-12 col-lg-4">
+                            <h3 class="mega-menu__heading">Health &amp; Wellness Services</h3>
+                            <ul class="mega-menu__list list-unstyled mb-0">
+                              <li><a href="services.html#health-wellness-services" class="mega-menu__link" data-bs-dismiss="offcanvas">Acupuncture</a></li>
+                              <li><a href="services.html#health-wellness-services" class="mega-menu__link" data-bs-dismiss="offcanvas">Massage</a></li>
+                              <li><a href="services.html#health-wellness-services" class="mega-menu__link" data-bs-dismiss="offcanvas">Spa facials</a></li>
+                              <li><a href="services.html#health-wellness-services" class="mega-menu__link" data-bs-dismiss="offcanvas">IV and injection therapy</a></li>
+                              <li><a href="services.html#health-wellness-services" class="mega-menu__link" data-bs-dismiss="offcanvas">Ozone and UBI therapy</a></li>
+                              <li><a href="services.html#health-wellness-services" class="mega-menu__link" data-bs-dismiss="offcanvas">Shockwave</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item"><a href="team.html" class="nav-link site-header__nav-link p-0" data-bs-dismiss="offcanvas">Our Team</a></li>
+                  <li class="nav-item"><a href="team.html#careers" class="nav-link site-header__nav-link p-0" data-bs-dismiss="offcanvas">Careers</a></li>
+                  <li class="nav-item"><a href="#insurance" class="nav-link site-header__nav-link p-0" data-bs-dismiss="offcanvas">Insurance</a></li>
+                  <li class="nav-item"><a href="contact.html" class="nav-link site-header__nav-link p-0" data-bs-dismiss="offcanvas">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- CTA (always visible) -->
+            <a href="#book-online" class="btn-revive btn-revive--primary btn-revive--sm flex-shrink-0">Book Online</a>
+
+          </div>
+        </div>
+
+      </div>
+    </nav>
+
+    <span class="site-header__bottom-brush" aria-hidden="true"></span>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ===================== HERO BANNER ===================== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <figure class="hero__background">
+        <img
+          src="assets/images/hero-image.jpg"
+          alt="A person holding orange dumbbells during a wellness workout session"
+          class="hero__background-image"
+          width="1600"
+          height="818"
+        >
+        <span class="hero__background-overlay" aria-hidden="true"></span>
+      </figure>
+
+      <span class="hero__bottom-brush" aria-hidden="true"></span>
+
+      <div class="hero__content">
+        <h1 class="hero__title" id="hero-title">
+          Begin <span class="hero__title-emphasis">Your</span> Wellness Journey
+        </h1>
+        <a href="#book-online" class="btn-revive btn-revive--primary hero__cta">Book Online</a>
+      </div>
+    </section>
+
+    <!-- ===================== HIGHLIGHT BOX ===================== -->
+    <section class="highlight-section" aria-labelledby="highlight-title">
+      <div class="highlight-section__inner">
+        <article class="highlight-box">
+          <div class="highlight-box__inner d-flex flex-column flex-md-row">
+            <figure class="highlight-box__media">
+              <img
+                src="assets/images/new-patient.jpg"
+                alt="A physical therapist assisting a patient with a leg extension exercise"
+                class="highlight-box__image"
+                width="408"
+                height="262"
+              >
+            </figure>
+            <div class="highlight-box__content">
+              <h2 class="highlight-box__title" id="highlight-title">New Patient? Start Here.</h2>
+              <hr class="highlight-box__divider">
+              <p class="highlight-box__text">
+                We provide a wide range of services at Revive to help you achieve your health and wellness goals, individually and as a family.
+              </p>
+              <a href="#new-patient-intake" class="btn-revive btn-revive--light highlight-box__cta">New Patient Intake Form</a>
+            </div>
+          </div>
+          <span class="highlight-box__bottom-brush" aria-hidden="true"></span>
+        </article>
+      </div>
+      <div class="highlight-section__bottom-space" aria-hidden="true"></div>
+    </section>
+
+    <!-- ===================== OUR SERVICES ===================== -->
+    <section class="services-section" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <h2 class="services-section__title text-center" id="services-title">Our Services</h2>
+
+        <div class="services-section__list">
+
+          <!-- Pediatric Services: image left, content right -->
+          <article class="service-card row align-items-center g-4 g-lg-5" id="pediatric-services">
+            <div class="col-12 col-lg-5">
+              <figure class="service-card__media service-card__media--accent-blue mx-auto mb-0">
+                <img
+                  src="assets/images/image-masking-shape-1.png"
+                  alt=""
+                  class="service-card__media-glow"
+                  width="441"
+                  height="457"
+                  aria-hidden="true"
+                >
+                <img
+                  src="assets/images/peadiatric-service-masked.png"
+                  alt="A young child holding a yellow ball above their head"
+                  class="service-card__image"
+                  width="441"
+                  height="457"
+                >
+              </figure>
+            </div>
+            <div class="col-12 col-lg-7">
+              <div class="service-card__content">
+                <h3 class="service-card__heading">Pediatric Services</h3>
+                <p class="service-card__text">
+                  Our pediatric team supports children of all ages with individualized therapy plans that build strength, confidence, and independence—at home, school, and play.
+                </p>
+                <ul class="service-card__list row row-cols-1 row-cols-sm-2 g-2 list-unstyled mb-4">
+                  <li class="col"><span class="service-card__list-item">Physical Therapy</span></li>
+                  <li class="col"><span class="service-card__list-item">Occupational Therapy</span></li>
+                  <li class="col"><span class="service-card__list-item">Speech Therapy</span></li>
+                  <li class="col"><span class="service-card__list-item">Aquatic Therapy</span></li>
+                  <li class="col"><span class="service-card__list-item">ABA Therapy</span></li>
+                </ul>
+                <a href="services.html#pediatric-services" class="btn-revive btn-revive--primary btn-revive--sm">More Info</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Specialized: content left, image right -->
+          <article class="service-card row align-items-center g-4 g-lg-5 flex-lg-row-reverse" id="specialized-services">
+            <div class="col-12 col-lg-5">
+              <figure class="service-card__media service-card__media--accent-purple mx-auto mb-0">
+                <img
+                  src="assets/images/image-masking-shape-purple.png"
+                  alt=""
+                  class="service-card__media-glow"
+                  width="441"
+                  height="457"
+                  aria-hidden="true"
+                >
+                <img
+                  src="assets/images/specialized-masked.png"
+                  alt="A person in a hoodie sitting thoughtfully with hands clasped"
+                  class="service-card__image"
+                  width="441"
+                  height="457"
+                >
+              </figure>
+            </div>
+            <div class="col-12 col-lg-7">
+              <div class="service-card__content">
+                <h3 class="service-card__heading">Specialized</h3>
+                <p class="service-card__text">
+                  From pelvic health to mental wellness, our specialized programs address complex needs with compassionate, evidence-based care tailored to each patient.
+                </p>
+                <ul class="service-card__list row row-cols-1 row-cols-sm-2 g-2 list-unstyled mb-4">
+                  <li class="col"><span class="service-card__list-item">Pelvic Floor (Men&rsquo;s &amp; Women&rsquo;s Health)</span></li>
+                  <li class="col"><span class="service-card__list-item">Mercier</span></li>
+                  <li class="col"><span class="service-card__list-item">Lymphedema</span></li>
+                  <li class="col"><span class="service-card__list-item">Speech Therapy</span></li>
+                  <li class="col"><span class="service-card__list-item">Mental Health</span></li>
+                </ul>
+                <a href="services.html#specialized-services" class="btn-revive btn-revive--primary btn-revive--sm">More Info</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Health & Wellness: image left, content right -->
+          <article class="service-card row align-items-center g-4 g-lg-5" id="health-wellness-services">
+            <div class="col-12 col-lg-5">
+              <figure class="service-card__media service-card__media--accent-purple mx-auto mb-0">
+                <img
+                  src="assets/images/image-masking-shape-purple.png"
+                  alt=""
+                  class="service-card__media-glow"
+                  width="441"
+                  height="457"
+                  aria-hidden="true"
+                >
+                <img
+                  src="assets/images/health-wellness-masked.png"
+                  alt="Hands performing a therapeutic massage on a person's back"
+                  class="service-card__image"
+                  width="441"
+                  height="457"
+                >
+              </figure>
+            </div>
+            <div class="col-12 col-lg-7">
+              <div class="service-card__content">
+                <h3 class="service-card__heading">Health &amp; Wellness</h3>
+                <p class="service-card__text">
+                  Restore balance and feel your best with integrative wellness therapies designed to support recovery, reduce pain, and promote lasting vitality.
+                </p>
+                <ul class="service-card__list row row-cols-1 row-cols-sm-2 g-2 list-unstyled mb-4">
+                  <li class="col"><span class="service-card__list-item">IV and Injection Therapy</span></li>
+                  <li class="col"><span class="service-card__list-item">Ozone and UBI Therapy</span></li>
+                  <li class="col"><span class="service-card__list-item">Shockwave</span></li>
+                  <li class="col"><span class="service-card__list-item">Acupuncture</span></li>
+                  <li class="col"><span class="service-card__list-item">Massage</span></li>
+                  <li class="col"><span class="service-card__list-item">Spa Facials</span></li>
+                </ul>
+                <a href="services.html#health-wellness-services" class="btn-revive btn-revive--primary btn-revive--sm">More Info</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TESTIMONIALS ===================== -->
+    <section class="testimonials-section" id="testimonials" aria-labelledby="testimonials-title">
+      <div class="container">
+        <div class="testimonials-section__header text-center">
+          <img
+            src="assets/images/testimonial-brush.png"
+            alt=""
+            class="testimonials-section__brush"
+            width="280"
+            height="40"
+            aria-hidden="true"
+          >
+          <h2 class="testimonials-section__title" id="testimonials-title">Testimonials</h2>
+        </div>
+
+        <div class="testimonials-section__carousel-wrap position-relative">
+          <div class="testimonials-slider" data-testimonials-slider>
+            <blockquote class="testimonial-slide text-center">
+              <p class="testimonial-slide__quote">
+                Acupuncture has been extremely beneficial for me in multiple faucets of health! I began my journey due to severe migraines during pregnancy and now utilize it for self care management from the demands of every day life. My favorite part is the cupping, I can instantly tell a difference after a session!
+              </p>
+              <footer class="testimonial-slide__author">
+                <cite class="testimonial-slide__name">&mdash; Reilly</cite>
+              </footer>
+            </blockquote>
+
+            <blockquote class="testimonial-slide text-center">
+              <p class="testimonial-slide__quote">
+                The team at Revive truly listens. My physical therapy sessions have helped me regain strength and confidence after my injury, and I always leave feeling supported and hopeful.
+              </p>
+              <footer class="testimonial-slide__author">
+                <cite class="testimonial-slide__name">&mdash; Jordan</cite>
+              </footer>
+            </blockquote>
+
+            <blockquote class="testimonial-slide text-center">
+              <p class="testimonial-slide__quote">
+                From the moment I walked in, I felt cared for. The wellness treatments have become an essential part of how I manage stress and stay healthy for my family.
+              </p>
+              <footer class="testimonial-slide__author">
+                <cite class="testimonial-slide__name">&mdash; Sam</cite>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== JOIN THE TEAM ===================== -->
+    <section class="team-section" id="our-team" aria-labelledby="team-title">
+      <div class="team-section__inner row g-0">
+        <div class="col-12 col-lg-6">
+          <figure class="team-section__media mb-0">
+            <img
+              src="assets/images/team.jpg"
+              alt="The Revive Integrative Health team posing together in matching shirts"
+              class="team-section__image"
+              width="960"
+              height="640"
+            >
+          </figure>
+        </div>
+        <div class="col-12 col-lg-6 d-flex align-items-center">
+          <div class="team-section__content text-center mx-auto">
+            <h2 class="team-section__title" id="team-title">Join the Team</h2>
+            <p class="team-section__text">
+              Join our vibrant multidisciplinary team at Revive Integrative Health in Salina Kansas. Our clinic is a hub of innovation and support, fostering a nurturing environment for both our patients and staff.
+            </p>
+            <a href="team.html#careers" class="btn-revive btn-revive--primary">Apply Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 class="contact-section__title text-center" id="contact-title">Contact Our Team</h2>
+
+        <!--
+          Cognito Forms embed goes inside .cognito-form-embed.
+          All form field styles are scoped to that parent class so they apply
+          to the embedded Cognito markup. Replace the preview markup below
+          with your Cognito embed script when ready, e.g.:
+
+          <script src="https://www.cognitoforms.com/f/seamless.js" data-key="YOUR_KEY" data-form="YOUR_FORM"></script>
+        -->
+        <div class="cognito-form-embed" id="cognito-contact-form">
+          <!-- Static preview using Cognito-like class names (remove when embedding) -->
+          <form class="cog-form c-forms-form" action="#" method="post" novalidate>
+            <div class="cog-row c-row row g-3">
+              <div class="cog-row__col c-col col-12 col-md-6">
+                <div class="cog-field cog-text cog-name c-field c-name">
+                  <label class="cog-label c-label" for="contact-name">Name</label>
+                  <input class="el-input__inner c-input" id="contact-name" name="name" type="text" autocomplete="name">
+                </div>
+              </div>
+              <div class="cog-row__col c-col col-12 col-md-6">
+                <div class="cog-field cog-email c-field c-email">
+                  <label class="cog-label c-label" for="contact-email">Email</label>
+                  <input class="el-input__inner c-input" id="contact-email" name="email" type="email" autocomplete="email">
+                </div>
+              </div>
+              <div class="cog-row__col c-col col-12">
+                <div class="cog-field cog-text cog-text--multiplelines c-field c-textarea">
+                  <label class="cog-label c-label" for="contact-message">Message</label>
+                  <textarea class="el-textarea__inner c-textarea-input" id="contact-message" name="message" rows="5"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="cog-form__footer c-forms-form-buttons d-flex flex-column flex-sm-row align-items-sm-center justify-content-between gap-3 mt-4">
+              <div class="cognito-form-embed__captcha" aria-hidden="true">
+                <!-- reCAPTCHA is provided by Cognito when the form is embedded -->
+                <div class="cognito-form-embed__captcha-placeholder">reCAPTCHA</div>
+              </div>
+              <button type="submit" class="cog-button cog-button--primary cog-button--submit c-button" id="c-submit-button">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <span class="contact-section__bottom-brush" aria-hidden="true"></span>
+    </section>
+
+    <!-- ===================== LOCATIONS & HOURS ===================== -->
+    <section class="locations-section" id="locations" aria-labelledby="locations-title">
+      <div class="container">
+        <h2 class="locations-section__title text-center" id="locations-title">Locations &amp; Hours</h2>
+
+        <div class="row g-4 g-lg-5 justify-content-center">
+          <div class="col-12 col-md-6 col-lg-5">
+            <article class="location-card">
+              <h3 class="location-card__name">Salina Location</h3>
+              <address class="location-card__address">
+                645 E. Iron St<br>
+                Salina, KS 67401
+              </address>
+
+              <div class="location-card__block">
+                <h4 class="location-card__heading">General Office Hours</h4>
+                <p class="location-card__text">Monday-Friday 9am-5pm</p>
+              </div>
+
+              <div class="location-card__block">
+                <h4 class="location-card__heading">IV Clinic Hours:</h4>
+                <ul class="location-card__hours list-unstyled mb-0">
+                  <li>Tuesday: 1pm-6pm</li>
+                  <li>Thursday: 7:30am-1pm</li>
+                  <li>Fridays: 12pm-5pm</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-5">
+            <article class="location-card">
+              <h3 class="location-card__name">McPherson Location</h3>
+              <address class="location-card__address">
+                114 W. Euclid<br>
+                McPherson, KS 67460
+              </address>
+              <p class="location-card__note">Located in Stupka Chiropractic</p>
+
+              <div class="location-card__block">
+                <h4 class="location-card__heading">IV Clinic Hours:</h4>
+                <p class="location-card__text">Tuesday, July 8 &amp; July 22: 2-6pm</p>
+              </div>
+
+              <p class="location-card__footnote">
+                <em>*Please check our Facebook for up-to-date clinic hours.</em>
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <span class="locations-section__bottom-brush" aria-hidden="true"></span>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="row gy-4 align-items-start justify-content-between">
+
+        <div class="col-12 col-lg-3">
+          <a href="/" class="site-footer__logo-link" aria-label="Revive Integrative Health — Home">
+            <img
+              src="assets/images/logo.png"
+              alt="Revive Integrative Health"
+              class="site-footer__logo img-fluid"
+              width="342"
+              height="150"
+            >
+          </a>
+        </div>
+
+        <div class="col-12 col-md-8 col-lg-6">
+          <div class="site-footer__contact">
+            <h2 class="site-footer__heading">Contact Us</h2>
+
+            <div class="row g-3 g-md-4 mb-3">
+              <div class="col-12 col-sm-6">
+                <address class="site-footer__address mb-0">
+                  <strong class="site-footer__address-title">Salina Location</strong><br>
+                  645 E. Iron St<br>
+                  Salina, KS 67401
+                </address>
+              </div>
+              <div class="col-12 col-sm-6">
+                <address class="site-footer__address mb-0">
+                  <strong class="site-footer__address-title">McPherson Location</strong><br>
+                  114 W. Euclid<br>
+                  McPherson, KS 67460<br>
+                  Located in Stupka Chiropractic
+                </address>
+              </div>
+            </div>
+
+            <ul class="site-footer__links list-unstyled mb-0">
+              <li>
+                <a href="tel:7854149422" class="site-footer__link">
+                  <svg class="site-footer__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.56.57 1 1 0 011 1V21a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.56 1 1 0 01-.25 1.01l-2.2 2.22z"/>
+                  </svg>
+                  <span>785-414-9422</span>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:revive@reviveih.com" class="site-footer__link">
+                  <svg class="site-footer__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                  </svg>
+                  <span>revive@reviveih.com</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 col-lg-3">
+          <div class="site-footer__meta text-md-end">
+            <a
+              href="https://www.facebook.com/"
+              class="site-footer__social"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Revive Integrative Health on Facebook"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M22 12a10 10 0 10-11.5 9.9v-7H8v-3h2.5V9.5c0-2.5 1.5-3.9 3.7-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.5V12H16l-.4 3h-2.6v7A10 10 0 0022 12z"/>
+              </svg>
+            </a>
+
+            <p class="site-footer__credit mb-0">
+              <span>&copy;2026 Revive Integrative Health</span>
+              <span>Designed by Mr. Freeland Design</span>
+              <span>Powered by WCCiT</span>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- jQuery (required by Slick) -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  <!-- Slick Carousel -->
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Testimonials slider -->
+  <script src="js/testimonials.js"></script>
+
+  <!-- Services mega menu -->
+  <script src="js/megamenu.js"></script>
+</body>
+</html>

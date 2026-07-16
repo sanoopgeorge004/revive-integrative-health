@@ -1,0 +1,22 @@
+{
+  "name": "revive-integrative-health",
+  "version": "1.0.0",
+  "description": "Custom WordPress theme for Revive Integrative Health",
+  "scripts": {
+    "sass": "sass scss/style.scss css/style.css --style=expanded",
+    "sass:watch": "sass scss/style.scss css/style.css --watch --style=expanded",
+    "sass:prod": "sass scss/style.scss css/style.css --style=compressed --no-source-map",
+    "build": "wp-scripts build",
+    "start": "wp-scripts start",
+    "packages-update": "wp-scripts packages-update",
+    "env:start": "wp-env start",
+    "env:stop": "wp-env stop",
+    "env:destroy": "wp-env destroy"
+  },
+  "devDependencies": {
+    "@wordpress/env": "^10.14.0",
+    "@wordpress/scripts": "^30.12.0",
+    "copy-webpack-plugin": "^12.0.2",
+    "sass": "^1.77.0"
+  }
+}
