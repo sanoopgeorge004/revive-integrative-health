@@ -14,6 +14,8 @@ const config = {
 	entry: {
 		'hero/index': path.resolve( __dirname, 'src/blocks/hero/index.js' ),
 		'highlight-box/index': path.resolve( __dirname, 'src/blocks/highlight-box/index.js' ),
+		'contact-locations/index': path.resolve( __dirname, 'src/blocks/contact-locations/index.js' ),
+		'careers/index': path.resolve( __dirname, 'src/blocks/careers/index.js' ),
 	},
 	output: {
 		...defaultConfig.output,
@@ -30,6 +32,10 @@ if ( CopyWebpackPlugin ) {
 				{ from: 'src/blocks/hero/render.php', to: 'hero/render.php' },
 				{ from: 'src/blocks/highlight-box/block.json', to: 'highlight-box/block.json' },
 				{ from: 'src/blocks/highlight-box/render.php', to: 'highlight-box/render.php' },
+				{ from: 'src/blocks/contact-locations/block.json', to: 'contact-locations/block.json' },
+				{ from: 'src/blocks/contact-locations/render.php', to: 'contact-locations/render.php' },
+				{ from: 'src/blocks/careers/block.json', to: 'careers/block.json' },
+				{ from: 'src/blocks/careers/render.php', to: 'careers/render.php' },
 			],
 		} ),
 	];

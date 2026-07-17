@@ -17,5 +17,7 @@ require_once REVIVE_THEME_DIR . '/inc/helpers.php';
 require_once REVIVE_THEME_DIR . '/inc/setup.php';
 require_once REVIVE_THEME_DIR . '/inc/enqueue.php';
 require_once REVIVE_THEME_DIR . '/inc/template-tags.php';
+require_once REVIVE_THEME_DIR . '/inc/class-revive-nav-walker.php';
+require_once REVIVE_THEME_DIR . '/inc/services.php';
 require_once REVIVE_THEME_DIR . '/inc/customizer/class-kirki-config.php';
 require_once REVIVE_THEME_DIR . '/inc/blocks.php';

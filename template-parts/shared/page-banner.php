@@ -1,6 +1,8 @@
 <?php
 /**
- * Page banner partial.
+ * Page banner partial — full-bleed image with title overlay (services.html style).
+ *
+ * Prefer revive_the_page_banner() so the featured image is used automatically.
  *
  * @package Revive_Integrative_Health
  *
@@ -15,16 +17,18 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-$title     = isset( $args['title'] ) ? $args['title'] : '';
-$image     = isset( $args['image'] ) ? $args['image'] : '';
-$image_alt = isset( $args['image_alt'] ) ? $args['image_alt'] : '';
+$title     = isset( $args['title'] ) ? (string) $args['title'] : '';
+$image     = isset( $args['image'] ) ? (string) $args['image'] : '';
+$image_alt = isset( $args['image_alt'] ) ? (string) $args['image_alt'] : '';
 
 if ( '' === $title || '' === $image ) {
 	return;
 }
 
-$image_url = ( 0 === strpos( $image, 'http' ) ) ? $image : revive_asset_uri( $image );
-$title_id  = 'page-banner-title';
+$image_url = ( 0 === strpos( $image, 'http://' ) || 0 === strpos( $image, 'https://' ) )
+	? $image
+	: revive_asset_uri( $image );
+$title_id = 'page-banner-title';
 ?>
 <section class="page-banner" aria-labelledby="<?php echo esc_attr( $title_id ); ?>">
 	<figure class="page-banner__background">

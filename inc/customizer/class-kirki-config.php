@@ -224,6 +224,43 @@ function revive_register_kirki_fields() {
 	);
 
 	Kirki::add_section(
+		'revive_contact',
+		array(
+			'title'       => esc_html__( 'Contact Form', 'revive-integrative-health' ),
+			'description' => esc_html__( 'Manage the site-wide contact section and Cognito Forms embed.', 'revive-integrative-health' ),
+			'panel'       => 'revive_panel',
+			'priority'    => 35,
+		)
+	);
+
+	Kirki::add_field(
+		'revive_theme',
+		array(
+			'type'     => 'text',
+			'settings' => 'revive_contact_title',
+			'label'    => esc_html__( 'Section Title', 'revive-integrative-health' ),
+			'section'  => 'revive_contact',
+			'default'  => 'Contact Our Team',
+		)
+	);
+
+	Kirki::add_field(
+		'revive_theme',
+		array(
+			'type'              => 'code',
+			'settings'          => 'revive_cognito_embed',
+			'label'             => esc_html__( 'Cognito Forms Embed Code', 'revive-integrative-health' ),
+			'description'       => esc_html__( 'Paste your Cognito Forms embed script here (seamless.js). Leave empty to show the placeholder form.', 'revive-integrative-health' ),
+			'section'           => 'revive_contact',
+			'default'           => '',
+			'choices'           => array(
+				'language' => 'html',
+			),
+			'sanitize_callback' => 'revive_sanitize_cognito_embed',
+		)
+	);
+
+	Kirki::add_section(
 		'revive_footer',
 		array(
 			'title'    => esc_html__( 'Footer', 'revive-integrative-health' ),

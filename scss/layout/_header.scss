@@ -75,6 +75,12 @@
     }
   }
 
+  .current-menu-item > &__nav-link,
+  .current-menu-ancestor > &__nav-link,
+  .current_page_item > &__nav-link {
+    color: $primary-color;
+  }
+
   &__phone {
     font-size: $font-size-sm;
     font-weight: $font-weight-medium;
@@ -153,7 +159,7 @@
       left: 0;
       right: 0;
       bottom: 100%;
-      height: 5.5rem;
+      height: calc(#{$brush-height} + #{$spacing-xl});
     }
   }
 
@@ -170,6 +176,17 @@
     letter-spacing: $letter-spacing-wide;
     text-transform: uppercase;
     color: $white;
+  }
+
+  &__heading-link {
+    color: inherit;
+    text-decoration: none;
+    transition: color $transition-base;
+
+    &:hover,
+    &:focus-visible {
+      color: $primary-color;
+    }
   }
 
   &__list {

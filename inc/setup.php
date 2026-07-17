@@ -73,6 +73,29 @@ function revive_kirki_missing_notice() {
 add_action( 'admin_notices', 'revive_kirki_missing_notice' );
 
 /**
+ * Admin notice when the primary menu location is unassigned.
+ */
+function revive_primary_menu_notice() {
+	if ( ! current_user_can( 'edit_theme_options' ) || has_nav_menu( 'primary' ) ) {
+		return;
+	}
+
+	$menus_url = admin_url( 'nav-menus.php' );
+
+	printf(
+		'<div class="notice notice-info"><p>%s</p></div>',
+		wp_kses_post(
+			sprintf(
+				/* translators: %s: Menus admin URL */
+				__( 'Assign a menu to the <strong>Primary Menu</strong> location under <a href="%s">Appearance → Menus</a>. Until then, a fallback navigation is shown. For the Services mega menu, add CSS class <code>mega</code> to the Services item (enable CSS Classes in Screen Options).', 'revive-integrative-health' ),
+				esc_url( $menus_url )
+			)
+		)
+	);
+}
+add_action( 'admin_notices', 'revive_primary_menu_notice' );
+
+/**
  * Add page-inner body class on inner page templates.
  *
  * @param string[] $classes Body classes.
@@ -83,7 +106,7 @@ function revive_body_classes( $classes ) {
 		$classes = array();
 	}
 
-	if ( ! is_front_page() && ( is_page_template( 'page-templates/template-services.php' ) || is_page_template( 'page-templates/template-team.php' ) || is_page_template( 'page-templates/template-contact.php' ) || is_page( array( 'services', 'team', 'contact' ) ) ) ) {
+	if ( ! is_front_page() && ( is_page() || is_singular( 'services' ) ) ) {
 		$classes[] = 'page-inner';
 	}
 

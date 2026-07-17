@@ -39,6 +39,8 @@ function revive_register_blocks() {
 	$blocks = array(
 		'hero',
 		'highlight-box',
+		'contact-locations',
+		'careers',
 	);
 
 	foreach ( $blocks as $block ) {

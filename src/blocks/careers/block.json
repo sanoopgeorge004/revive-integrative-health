@@ -1,0 +1,46 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "revive/careers",
+	"title": "Careers / Job Posts",
+	"category": "revive",
+	"icon": "businessman",
+	"description": "Careers section with a repeater for multiple job postings.",
+	"textdomain": "revive-integrative-health",
+	"attributes": {
+		"sectionTitle": {
+			"type": "string",
+			"default": "Open Positions"
+		},
+		"jobs": {
+			"type": "array",
+			"default": [
+				{
+					"title": "Pediatric Speech and Language Pathologist",
+					"jobPostingLabel": "Job Posting: Pediatric Speech and Language Pathologist (SLP)",
+					"location": "Salina, KS",
+					"position": "Full-Time, Outpatient Pediatric SLP",
+					"clienteleAgeRange": "15 months and above",
+					"imageUrl": "",
+					"imageId": 0,
+					"imageAlt": "Revive Integrative Health team",
+					"aboutUs": "Join our vibrant multidisciplinary team at Revive Integrative Health in Salina Kansas. We offer pediatric therapy services, where we are dedicated to providing exceptional care to children with diverse therapy needs. Our clinic is a hub of innovation and support, fostering a nurturing environment for both our patients and staff.",
+					"roleOverview": "We are seeking a compassionate and skilled Speech and Language Pathologist to enhance our outpatient pediatric therapy team. The ideal candidate will have a passion for working with children and be eager to collaborate with Occupational Therapists and Physical Therapists to deliver comprehensive care.",
+					"keyResponsibilities": "Assess and treat speech, language, voice, and fluency disorders.\nDevelop individualized treatment plans for a pediatric population aged 15 months and above.\nCollaborate with a multidisciplinary team to integrate speech therapy with overall care.\nEducate families about their child’s needs and how to support their communication development.\nDocument progress and adjust treatment plans as necessary.",
+					"whatWeOffer": "A supportive work culture that values work-life balance.\nFlexible hours to accommodate your lifestyle.\nCompetitive salary with bonus opportunities.\nPaid maternity leave to support you and your family.\nOpportunities for professional growth and development with continuing education stipends\nStudent loan reimbursement\nComprehensive retirement options to plan for your future.",
+					"qualifications": "Master’s degree in Speech-Language Pathology.\nASHA Certification (CCC-SLP) and state licensure or eligibility.\nExperience in pediatric outpatient settings is preferred but not required.\nStrong interpersonal skills and a team-oriented mindset.",
+					"joinUs": "If you’re ready to make a difference in the lives of children and join a team that feels like family, apply to Revive Integrative Health today. Please submit your resume and cover letter to reviveih.com\n\nWe can’t wait to meet you!",
+					"equalOpportunity": "Revive Integrative Health is an equal opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees.",
+					"applyLabel": "Apply Now",
+					"applyUrl": "#contact"
+				}
+			]
+		}
+	},
+	"supports": {
+		"html": false,
+		"align": ["full"]
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}

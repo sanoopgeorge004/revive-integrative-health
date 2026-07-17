@@ -1,0 +1,63 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "revive/contact-locations",
+	"title": "Contact Locations",
+	"category": "revive",
+	"icon": "location",
+	"description": "Locations & hours section with a repeater for each clinic location.",
+	"textdomain": "revive-integrative-health",
+	"attributes": {
+		"sectionTitle": {
+			"type": "string",
+			"default": "Locations & Hours"
+		},
+		"locations": {
+			"type": "array",
+			"default": [
+				{
+					"name": "Salina Location",
+					"address": "645 E. Iron St\nSalina, KS 67401",
+					"note": "",
+					"hours": [
+						{
+							"heading": "General Office Hours",
+							"content": "Monday-Friday 9am-5pm"
+						},
+						{
+							"heading": "IV Clinic Hours:",
+							"content": "Tuesday: 1pm-6pm\nThursday: 7:30am-1pm\nFridays: 12pm-5pm"
+						}
+					],
+					"phone": "785-414-9422",
+					"fax": "Fax: 785-200-3765",
+					"mapUrl": "https://maps.google.com/maps?q=645+E.+Iron+St,+Salina,+KS+67401&z=15&output=embed",
+					"mapTitle": "Map of Revive Integrative Health Salina location",
+					"footnote": ""
+				},
+				{
+					"name": "McPherson Location",
+					"address": "114 W. Euclid\nMcPherson, KS 67460",
+					"note": "Located in Stupka Chiropractic",
+					"hours": [
+						{
+							"heading": "IV Clinic Hours:",
+							"content": "Tuesday, July 8 & July 22: 2-6pm"
+						}
+					],
+					"phone": "",
+					"fax": "",
+					"mapUrl": "https://maps.google.com/maps?q=114+W.+Euclid,+McPherson,+KS+67460&z=15&output=embed",
+					"mapTitle": "Map of Revive Integrative Health McPherson location",
+					"footnote": "*Please check our Facebook for up-to-date clinic hours."
+				}
+			]
+		}
+	},
+	"supports": {
+		"html": false,
+		"align": ["full"]
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}
